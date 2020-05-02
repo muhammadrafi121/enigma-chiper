@@ -22,6 +22,7 @@ let enigma;
 function mulai() {
 
 	let textInput = input.value;
+        textInput = textInput.toLowerCase();
 	let hasil = "";
 
 	let no1 = rotorNo1.value - 1;
