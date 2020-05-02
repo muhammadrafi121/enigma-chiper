@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Enigma Chiper</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="input">
+			<div class="left">
+				<div class="text-input">
+					<label for="text">Input: </label><br>
+					<textarea name="text" id="text-input" cols="30" rows="12"></textarea>
+				</div>					
+			</div>
+			<div class="middle">
+				<div class="rotor">
+					<label for="rotor1">Rotor 1</label><br>
+					<label for="nr1">No. </label>
+					<input type="number" class="nr1" name="nr1" min="1" max="5" size="3">
+					<label for="pr1">Pos. </label>
+					<input type="number" class="pr1" name="pr1" min="1" max="26" size="3"><br>
+					<label for="rotor2">Rotor 2</label><br>
+					<label for="nr2">No. </label>
+					<input type="number" class="nr2" name="nr2" min="1" max="5" size="3">
+					<label for="pr2">Pos. </label>
+					<input type="number" class="pr2" name="pr2" min="1" max="26" size="3"><br>
+					<label for="rotor3">Rotor 3</label><br>
+					<label for="nr3">No. </label>
+					<input type="number" class="nr3" name="nr3" min="1" max="5" size="3">
+					<label for="pr3">Pos. </label>
+					<input type="number" class="pr3" name="pr3" min="1" max="26" size="3"><br>
+				</div>
+				<div class="plugboard">
+					<label for="plugboard">Plugboard: </label>
+					<input type="text" name="Plugboard" class="plug-board" size="10" placeholder="eg. qw er ty...">
+				</div>
+				<button type="button" onclick="mulai()">Encrypt</button>
+			</div>
+		</div>
+		<div class="right">
+			<div class="output">
+				<label for="hasil">Output: </label><br>
+				<textarea name="text" id="output-text" cols="30" rows="12"></textarea>
+			</div>
+		</div>
+	</div>
+	<script src="js/script.js"></script>
+	<script src="js/rotor.js"></script>
+	<script src="js/plugBoard.js"></script>
+	<script src="js/plugPoint.js"></script>
+	<script src="js/plug.js"></script>
+	<script src="js/endThing.js"></script>
+	<script src="js/enigma.js"></script>
+</body>
+</html>
